@@ -1,2 +1,2 @@
 # Following the Pythons Tutorial
-Personal collection of some of the tutorial relevant code snippets.
+I began the Python Tutorial while in holiday. This ist my personal collection of some of the tutorial relevant code snippets.
