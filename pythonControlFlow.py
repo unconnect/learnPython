@@ -1,5 +1,5 @@
 def divider():
-    print('------')
+    print('-' * 40)
 
 
 def fun_with_controlflow():
@@ -81,3 +81,42 @@ def print_fac(x):
         print(f'Faculty of {x} is', x)
     else:
         print(f'Faculty of {x} is', x * fac(x-1))
+
+
+def ask_ok(prompt, retries=4, reminder='Please try again!'):
+    """Function with default arguments"""
+    while True:
+        ok = input(prompt)
+        if ok in ('y', 'ye', 'yes'):
+            return True
+        if ok in ('n', 'no', 'nop', 'nope'):
+            return False
+        retries = retries - 1
+        if retries < 0:
+            raise ValueError('invalid user response')
+        print(reminder)
+
+
+# Default is shared between subsequent calls
+def f_eval_sequence(a, L=[]):
+    L.append(a)
+    return L
+
+
+# Default is not shared between subsequent calls
+def f_eval_sequence2(a, L=None):
+    if L is None:
+        L = []
+    L.append(a)
+    return L
+
+
+# *arguments receives a tupel, **keywords receives a dictionary
+def cheeseshop(kind, *arguments, **keywords):
+    print("-- Do you have any", kind, "?")
+    print("-- I'm sorry, we're all out of", kind)
+    for arg in arguments:
+        print(arg)
+    divider()
+    for kw in keywords:
+        print(kw, ":", keywords[kw])

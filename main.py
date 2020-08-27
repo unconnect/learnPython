@@ -21,3 +21,24 @@ if __name__ == '__main__':
     print('Faculty of 12 is', f(12))
     # fac procedure to print the faculty
     pcf.print_fac(6)
+    # Prompt user, example of default arguments
+    # pcf.ask_ok('Do you really wanna quit? ')
+
+    # Order of evaluation
+    print(pcf.f_eval_sequence(1))
+    print(pcf.f_eval_sequence(2))
+    print(pcf.f_eval_sequence(3))
+
+    print(pcf.f_eval_sequence2(1))
+    print(pcf.f_eval_sequence2(2))
+    print(pcf.f_eval_sequence2(3))
+
+    # Procedure receiving: keyword, *tupel, **dictionary
+    # It is also possible to give a packed argument list or tupel
+    # which is unpacked with the * operator
+    args = ['Really I do!', 'Is this valid?', 'It seems so ...']
+    pcf.cheeseshop('Parmesan',
+                   'I love parmesan!', *args,
+                   shopowner='Alex Shopowner',
+                   customer='Max the super customer',
+                   receipe='Shopping receipe')
