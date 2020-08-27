@@ -1,5 +1,6 @@
 import pythonNumbersStrings as pns
 import pythonControlFlow as pcf
+import pythonDatastructures as pds
 
 # Run main
 if __name__ == '__main__':
@@ -51,4 +52,9 @@ if __name__ == '__main__':
     # with the help of a lambda function
     pairs = [(1, 'z'), (2, 'e'), (3, 'r'), (4, 'u')]
     pairs.sort(key=lambda pair: pair[1], reverse=1)
+    pcf.divider()
+    print('Sorted list of tupels reverse ordered by lambda expression')
     print(pairs)
+
+    # Lists
+    pds.print_my_lists()

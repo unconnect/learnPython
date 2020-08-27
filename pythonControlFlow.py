@@ -74,6 +74,8 @@ def fac(x):
     """Return the faculty of the given number. Example of recursion."""
     if x == 1:
         return x
+    elif x == 0:
+        return 0
     else:
         return x * fac(x-1)
 
