@@ -30,11 +30,11 @@ def print_my_lists():
     print(my_list)
 
     faculties = []
-    for x in range(1,8):
+    for x in range(1, 8):
         faculties.append(fac(x))
 
     # This is the equivalent to build faculties
-    faculties2 = [fac(x) for x in range(1,10)]
+    faculties2 = [fac(x) for x in range(1, 10)]
 
     print(faculties)
     print(faculties2)
