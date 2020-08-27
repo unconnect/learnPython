@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 # Learning Python syntax
 
 # Hello / Hi pycharm extended
@@ -12,13 +13,17 @@ def print_hi_and_age(name, byear, bmonth, bday):
     age = now - birthday
     print('------')
     print('Hello World with age:')
-    print(f'Hi, {name} du bist jetzt {int(age.days / 365)} Jahre oder {age.days} Tage und {int(age.seconds / 3600)} Stunden alt.')
+    print(f'Hi, {name} du bist jetzt {int(age.days / 365)} Jahre oder '
+          f'{age.days} Tage und {int(age.seconds / 3600)} Stunden alt.')
+
 
 def print_string_stuff():
     # Raw String, when \ should be part of the string
-    rawstring = r'c:\this\is\a\windows\path\as\raw\string\see\the\r\at\beginning'
+    rawstring = r'c:\this\is\a\windows\path\as\raw\
+                    string\see\the\r\at\beginning'
     glueAndRepeat = 3 * 'repeat this three times ' + 'and glue this in the end'
-    concatStrings = 'Concat thi' 's two to one string. Works only for two strings. Use + otherwise.'
+    concatStrings = 'Concat thi' 's two to one string. ' \
+                    'Works only for two strings. Use + otherwise.'
     print('------')
     print('Some Strings:')
     print(rawstring)
@@ -31,10 +36,21 @@ def print_string_stuff():
     print('------')
     print('Formatted string output:')
     print('{0}, {1}, {2}'.format('Pos: Null', 'Pos: Eins', 'Pos: Zwei'))
-    print('{pos1}, {pos2}, {pos3}'.format(pos1='Position 1', pos2='Position 2', pos3='Position 3'))
+    print('{pos1}, {pos2}, {pos3}'.format(pos1='Position 1',
+                                          pos2='Position 2',
+                                          pos3='Position 3')
+          )
     print('Aligning strings:')
-    print('{pos1:<40} {pos2:<40} {pos3:>40}'.format(pos1='Position 1', pos2='Position 2', pos3='Position 3'))
-    print('{pos1:<40} {pos2:<40} {pos3:>40}'.format(pos1='Content an Pos 1, left aligned', pos2='Content an Pos 2, left aligned', pos3='Content an Pos 3, right aligned'))
+    print('{pos1:<40} {pos2:<40} {pos3:>40}'.format(pos1='Position 1',
+                                                    pos2='Position 2',
+                                                    pos3='Position 3')
+          )
+    print('{pos1:<40} {pos2:<40} {pos3:>40}'.format(
+        pos1='Content an Pos 1, left aligned',
+        pos2='Content an Pos 2, left aligned',
+        pos3='Content an Pos 3, right aligned')
+    )
+
 
 def print_lists():
     # List with groceries
@@ -60,7 +76,7 @@ def print_lists():
 # Run main
 if __name__ == '__main__':
     # Expanded "Hello World"
-    print_hi_and_age('Alex', 1979,12,7)
+    print_hi_and_age('Alex', 1979, 12, 7)
     # Raw string stuff
     print_string_stuff()
     print_lists()

@@ -16,11 +16,14 @@ if __name__ == '__main__':
     pcf.fun_with_loops()
     pcf.sqr(4)
     print('Faculty of 5 is', pcf.fac(5))
+
     # Point other name to Function fac()
     f = pcf.fac
     print('Faculty of 12 is', f(12))
+
     # fac procedure to print the faculty
     pcf.print_fac(6)
+
     # Prompt user, example of default arguments
     # pcf.ask_ok('Do you really wanna quit? ')
 
@@ -42,3 +45,10 @@ if __name__ == '__main__':
                    shopowner='Alex Shopowner',
                    customer='Max the super customer',
                    receipe='Shopping receipe')
+
+    # Lambdas
+    # Sorting by second value of the tupel,
+    # with the help of a lambda function
+    pairs = [(1, 'z'), (2, 'e'), (3, 'r'), (4, 'u')]
+    pairs.sort(key=lambda pair: pair[1], reverse=1)
+    print(pairs)

@@ -3,7 +3,8 @@ def divider():
 
 
 def fun_with_controlflow():
-    # Input which is converted to int and than stuff is printed based on if statements
+    # Input which is converted to int and than stuff is printed based on
+    # if statements
     eingabe = int(input('Bitte eine Zahl eingeben: '))
     if eingabe < 0:
         # If eingabe negative set to zero
@@ -41,10 +42,12 @@ def fun_with_loops():
     new_list = list(range(10))
     print(new_list)
     divider()
-    print('Find prime numbers, demonstation of break und else of a for loop, which is executed'
+    print('Find prime numbers, demonstation of break and'
+          ' else of a for loop, which is executed'
           'when no break was found')
     for n in range(2,10):
-        # Loop is testing for modulo == 0 in range of n, if it true n is no prime number
+        # Loop is testing for modulo == 0 in range of n,
+        # if it true n is no prime number
         for x in range(2, n):
             if n % x == 0:
                 print(n, 'equals', x, '*', n//x)
