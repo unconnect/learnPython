@@ -14,3 +14,8 @@ if __name__ == '__main__':
 
     # Fun with Loops
     pcf.fun_with_loops()
+    pcf.sqr(4)
+    print('Faculty of 5 is', pcf.fac(5))
+    # Point other name to Function fac()
+    f = pcf.fac
+    print('Faculty of 12 is', f(12))
