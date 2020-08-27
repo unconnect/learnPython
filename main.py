@@ -19,3 +19,5 @@ if __name__ == '__main__':
     # Point other name to Function fac()
     f = pcf.fac
     print('Faculty of 12 is', f(12))
+    # fac procedure to print the faculty
+    pcf.print_fac(6)

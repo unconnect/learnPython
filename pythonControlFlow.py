@@ -73,3 +73,11 @@ def fac(x):
         return x
     else:
         return x * fac(x-1)
+
+
+def print_fac(x):
+    """Recursive procedure which is printing the faculty."""
+    if x == 1:
+        print(f'Faculty of {x} is', x)
+    else:
+        print(f'Faculty of {x} is', x * fac(x-1))
